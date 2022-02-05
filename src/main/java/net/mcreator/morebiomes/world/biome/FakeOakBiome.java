@@ -75,8 +75,8 @@ public class FakeOakBiome extends MorebiomesModElements.ModElement {
 		@SubscribeEvent
 		public void registerBiomes(RegistryEvent.Register<Biome> event) {
 			if (biome == null) {
-				BiomeAmbience effects = new BiomeAmbience.Builder().setFogColor(-6684775).setWaterColor(-65536).setWaterFogColor(-6750208)
-						.withSkyColor(-6684775).withFoliageColor(-3394561).withGrassColor(-3368449)
+				BiomeAmbience effects = new BiomeAmbience.Builder().setFogColor(-26215).setWaterColor(-65536).setWaterFogColor(-6750157)
+						.withSkyColor(-26215).withFoliageColor(-3394561).withGrassColor(-3407668)
 						.setAmbientSound(
 								(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS
 										.getValue(new ResourceLocation("ambient.basalt_deltas.loop")))

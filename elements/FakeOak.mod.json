@@ -10,11 +10,11 @@
       "value": "Blocks.DIRT#0"
     },
     "airColor": {
-      "value": -6684775,
+      "value": -26215,
       "falpha": 0.0
     },
     "grassColor": {
-      "value": -3368449,
+      "value": -3407668,
       "falpha": 0.0
     },
     "foliageColor": {
@@ -26,7 +26,7 @@
       "falpha": 0.0
     },
     "waterFogColor": {
-      "value": -6750208,
+      "value": -6750157,
       "falpha": 0.0
     },
     "ambientSound": {
