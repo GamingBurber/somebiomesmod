@@ -42,7 +42,7 @@
       "value": "ambient.basalt_deltas.additions"
     },
     "moodSoundDelay": 6000,
-    "spawnParticles": true,
+    "spawnParticles": false,
     "particleToSpawn": {
       "value": "EXPLOSION_NORMAL"
     },

@@ -32,7 +32,6 @@ import net.minecraft.world.gen.blockstateprovider.SimpleBlockStateProvider;
 import net.minecraft.world.gen.blockplacer.ColumnBlockPlacer;
 import net.minecraft.world.gen.GenerationStage;
 import net.minecraft.world.biome.SoundAdditionsAmbience;
-import net.minecraft.world.biome.ParticleEffectAmbience;
 import net.minecraft.world.biome.MoodSoundAmbience;
 import net.minecraft.world.biome.MobSpawnInfo;
 import net.minecraft.world.biome.DefaultBiomeFeatures;
@@ -49,7 +48,6 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.RegistryKey;
 import net.minecraft.util.Direction;
 import net.minecraft.state.BooleanProperty;
-import net.minecraft.particles.ParticleTypes;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.client.audio.BackgroundMusicSelector;
@@ -87,7 +85,7 @@ public class FakeOakBiome extends MorebiomesModElements.ModElement {
 						.setMusic(new BackgroundMusicSelector(
 								(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.honey_block.hit")),
 								12000, 24000, true))
-						.setParticle(new ParticleEffectAmbience(ParticleTypes.EXPLOSION, 0.005f)).build();
+						.build();
 				BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder()
 						.withSurfaceBuilder(SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(Blocks.GRASS_BLOCK.getDefaultState(),
 								Blocks.DIRT.getDefaultState(), Blocks.DIRT.getDefaultState())));
