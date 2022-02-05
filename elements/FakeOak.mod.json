@@ -30,35 +30,38 @@
       "falpha": 0.0
     },
     "ambientSound": {
-      "value": ""
+      "value": "ambient.basalt_deltas.loop"
     },
     "additionsSound": {
-      "value": ""
+      "value": "ambient.basalt_deltas.additions"
     },
     "music": {
-      "value": ""
+      "value": "block.honey_block.hit"
     },
     "moodSound": {
-      "value": ""
+      "value": "ambient.basalt_deltas.additions"
     },
     "moodSoundDelay": 6000,
-    "spawnParticles": false,
+    "spawnParticles": true,
     "particleToSpawn": {
       "value": "EXPLOSION_NORMAL"
     },
     "particlesProbability": 0.5,
-    "biomeCategory": "NONE",
+    "biomeCategory": "EXTREME_HILLS",
     "parent": {
       "value": "No parent"
     },
     "rainingPossibility": 0.5,
-    "temperature": 0.5,
+    "temperature": 1.0,
     "baseHeight": 0.1,
     "heightVariation": 0.2,
     "biomeType": "WARM",
     "spawnBiome": true,
-    "biomeWeight": 10,
-    "biomeDictionaryTypes": [],
+    "biomeWeight": 1000,
+    "biomeDictionaryTypes": [
+      "FOREST",
+      "SANDY"
+    ],
     "grassPerChunk": 4,
     "seagrassPerChunk": 0,
     "flowersPerChunk": 4,
@@ -85,16 +88,16 @@
     "treeFruits": {
       "value": "Blocks.RED_MUSHROOM_BLOCK"
     },
-    "spawnStronghold": false,
-    "spawnMineshaft": false,
+    "spawnStronghold": true,
+    "spawnMineshaft": true,
     "spawnPillagerOutpost": false,
-    "villageType": "none",
+    "villageType": "desert",
     "spawnWoodlandMansion": false,
-    "spawnJungleTemple": false,
+    "spawnJungleTemple": true,
     "spawnDesertPyramid": false,
-    "spawnIgloo": false,
-    "spawnOceanMonument": false,
-    "spawnShipwreck": false,
+    "spawnIgloo": true,
+    "spawnOceanMonument": true,
+    "spawnShipwreck": true,
     "oceanRuinType": "NONE",
     "defaultFeatures": [
       "Caves",
@@ -102,6 +105,25 @@
       "FrozenTopLayer",
       "SwampVegetation"
     ],
-    "spawnEntries": []
+    "spawnEntries": [
+      {
+        "entity": {
+          "value": "EntityAnimal"
+        },
+        "minGroup": 56,
+        "maxGroup": 80,
+        "weight": 20,
+        "spawnType": "creature"
+      },
+      {
+        "entity": {
+          "value": "EntityAmbientCreature"
+        },
+        "minGroup": 4,
+        "maxGroup": 4,
+        "weight": 20,
+        "spawnType": "monster"
+      }
+    ]
   }
 }
